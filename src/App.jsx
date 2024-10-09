@@ -12,7 +12,7 @@ function App() {
 
   const reset = async() => {
     try{
-      let response = await axios.post(`${config.API_URL}${ApiRoutes.RESET.path}`,{
+      let response = await axios.post(`https://hotel-booking-be-2-9hoy.onrender.com/user/reset`,{
         token,
         newPassword
       })
@@ -41,7 +41,7 @@ function App() {
        Reset
       </Button>
       <Breadcrumb>
-      <Breadcrumb.Item href="https://bookinngg.netlify.app">Click Here</Breadcrumb.Item><span>&nbsp;</span>To Login with your New Password<span></span>
+      <Breadcrumb.Item href="https://main-booking.netlify.app">Click Here</Breadcrumb.Item><span>&nbsp;</span>To Login with your New Password<span></span>
       </Breadcrumb>
     </Form>
       </div>
